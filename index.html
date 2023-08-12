@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>T.Love - Koncerty</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/image.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- Open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB ESSENTIAL -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- MDB PLUGINS -->
+    <link rel="stylesheet" href="plugins/css/all.min.css" />
+    <!-- Custom styles -->
+    <style>
+      #navbar {
+        transition: 0.5s ease;
+      }
+      .fade-animation {
+        opacity: 0;
+      }
+      .bg-mint {
+        background-color: #287024;
+      }
+      .bg-greengray {
+        background-color: #d5edd9;
+      }
+      .bg-lightdark {
+        background-color: #1f5c1f;
+      }
+
+      .navbar-scroll .nav-link,
+      .navbar-scroll .navbar-toggler .fa-bars {
+        color: #fff;
+      }
+
+      /* Color of the links AFTER scroll */
+      .navbar-scrolled .nav-link,
+      .navbar-scrolled .navbar-toggler .fa-bars {
+        color: #fff;
+      }
+
+      /* Color of the navbar AFTER scroll */
+      .navbar-scrolled {
+        background-color: #0c420cb2;
+      }
+
+      /* An optional height of the navbar AFTER scroll */
+      .navbar.navbar-scroll.navbar-scrolled {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Start your project here-->
+    <div class="container-fluid p-0 m-0">
+      <!--Main Navigation-->
+
+      <!-- Animated navbar-->
+      <div id="nav-box">
+        <!-- Vertically centered scrollable modal -->
+        <!-- Sidenav -->
+        <nav id="sidenav-1" class="sidenav" data-mdb-hidden="true">
+          <div class="text-center py-5 border-bottom border-1">
+            <p class="h3">Koncerty</p>
+          </div>
+
+          <ul class="sidenav-menu mt-3">
+            <li class="sidenav-item">
+              <a class="sidenav-link" aria-current="page" href="index.html"
+                >Strona główna</a
+              >
+            </li>
+            <li class="sidenav-item">
+              <a
+                class="sidenav-link"
+                href="#bilety"
+                rel="nofollow"
+                data-mdb-smooth-scroll="smooth-scroll"
+              >
+                Bilety
+              </a>
+            </li>
+            <li class="sidenav-item">
+              <a
+                class="sidenav-link"
+                href="#info"
+                data-mdb-smooth-scroll="smooth-scroll"
+              >
+                Informacje
+              </a>
+            </li>
+            <li class="sidenav-item text-center mt-4">
+              <button
+                type="button"
+                class="btn btn-success"
+                data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal"
+              >
+                Zaloguj się
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <!-- Sidenav -->
+        <nav
+          class="navbar navbar-expand-lg fixed-top navbar-scroll"
+          id="navbar"
+        >
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler ps-0"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarExample01"
+              aria-controls="navbarExample01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span
+                class="navbar-toggler-icon d-flex justify-content-start align-items-center"
+              >
+                <i class="fas fa-bars"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Strona główna</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#bilety"
+                    rel="nofollow"
+                    data-mdb-smooth-scroll="smooth-scroll"
+                  >
+                    Bilety
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#info"
+                    data-mdb-smooth-scroll="smooth-scroll"
+                  >
+                    Informacje
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav flex-row">
+                <!-- Icons -->
+                <li class="nav-item">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-mdb-toggle="modal"
+                    data-mdb-target="#exampleModal"
+                  >
+                    Zaloguj się
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Modal -->
+        <div
+          class="modal top fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+          data-mdb-backdrop="true"
+          data-mdb-keyboard="true"
+        >
+          <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body p-4">
+                <div class="text-end">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-mdb-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <!-- Pills content -->
+                <div class="tab-content">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-login"
+                    role="tabpanel"
+                    aria-labelledby="mdb-tab-login"
+                  >
+                    <form>
+                      <h1 class="display-6 text-center">
+                        <img
+                          src="img/image.png"
+                          alt="logo"
+                          style="width: 36px; height: 40px"
+                        />
+                        T-Love Koncerty
+                      </h1>
+                      <div class="text-center mb-3">
+                        <p>Zaloguj się poprzez:</p>
+                        <button
+                          type="button"
+                          class="btn btn-success btn-floating mx-1"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                        <button
+                          type="button"
+                          class="btn btn-success btn-floating mx-1"
+                        >
+                          <i class="fab fa-google"></i>
+                        </button>
+
+                        <button
+                          type="button"
+                          class="btn btn-success btn-floating mx-1"
+                        >
+                          <i class="fab fa-twitter"></i>
+                        </button>
+                      </div>
+
+                      <p class="text-center">lub:</p>
+
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                        <input
+                          type="email"
+                          id="loginName"
+                          class="form-control"
+                        />
+                        <label
+                          class="form-label"
+                          for="loginName"
+                          style="margin-left: 0px"
+                          >Email lub nazwa użytkownika</label
+                        >
+                        <div class="form-notch">
+                          <div
+                            class="form-notch-leading"
+                            style="width: 9px"
+                          ></div>
+                          <div
+                            class="form-notch-middle"
+                            style="width: 114.4px"
+                          ></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                        <input
+                          type="password"
+                          id="loginPassword"
+                          class="form-control"
+                        />
+                        <label
+                          class="form-label"
+                          for="loginPassword"
+                          style="margin-left: 0px"
+                          >Hasło</label
+                        >
+                        <div class="form-notch">
+                          <div
+                            class="form-notch-leading"
+                            style="width: 9px"
+                          ></div>
+                          <div
+                            class="form-notch-middle"
+                            style="width: 64.8px"
+                          ></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <!-- 2 column grid layout for inline styling -->
+                      <div class="row mb-4">
+                        <div class="col d-flex justify-content-center">
+                          <!-- Checkbox -->
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="loginCheck"
+                              checked=""
+                            />
+                            <label class="form-check-label" for="loginCheck">
+                              Zapamiętaj mnie
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col">
+                          <!-- Simple link -->
+                          <a class="text-success" href="#!"
+                            >Zapomniałeś hasła?</a
+                          >
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        class="btn btn-success btn-block mb-4"
+                      >
+                        Zaloguj się
+                      </button>
+
+                      <!-- Register buttons -->
+                      <div class="text-center">
+                        <p class="mb-1">
+                          Nie masz konta?
+                          <a class="text-success" href="#!">Zarejestruj</a>
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-register"
+                    role="tabpanel"
+                    aria-labelledby="mdb-tab-register"
+                  >
+                    <form>
+                      <div class="text-center mb-3">
+                        <p>Sign up with:</p>
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-floating mx-1"
+                        >
+                          <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-floating mx-1"
+                        >
+                          <i class="fab fa-google"></i>
+                        </button>
+
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-floating mx-1"
+                        >
+                          <i class="fab fa-twitter"></i>
+                        </button>
+
+                        <button
+                          type="button"
+                          class="btn btn-primary btn-floating mx-1"
+                        >
+                          <i class="fab fa-github"></i>
+                        </button>
+                      </div>
+
+                      <p class="text-center">or:</p>
+
+                      <!-- Name input -->
+                      <div class="form-outline mb-4">
+                        <input
+                          type="text"
+                          id="registerName"
+                          class="form-control"
+                        />
+                        <label
+                          class="form-label"
+                          for="registerName"
+                          style="margin-left: 0px"
+                          >Name</label
+                        >
+                        <div class="form-notch">
+                          <div
+                            class="form-notch-leading"
+                            style="width: 9px"
+                          ></div>
+                          <div
+                            class="form-notch-middle"
+                            style="width: 8px"
+                          ></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <!-- Username input -->
+                      <div class="form-outline mb-4">
+                        <input
+                          type="text"
+                          id="registerUsername"
+                          class="form-control"
+                        />
+                        <label
+                          class="form-label"
+                          for="registerUsername"
+                          style="margin-left: 0px"
+                          >Username</label
+                        >
+                        <div class="form-notch">
+                          <div
+                            class="form-notch-leading"
+                            style="width: 9px"
+                          ></div>
+                          <div
+                            class="form-notch-middle"
+                            style="width: 8px"
+                          ></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <!-- Email input -->
+                      <div class="form-outline mb-4">
+                        <input
+                          type="email"
+                          id="registerEmail"
+                          class="form-control"
+                        />
+                        <label
+                          class="form-label"
+                          for="registerEmail"
+                          style="margin-left: 0px"
+                          >Email</label
+                        >
+                        <div class="form-notch">
+                          <div
+                            class="form-notch-leading"
+                            style="width: 9px"
+                          ></div>
+                          <div
+                            class="form-notch-middle"
+                            style="width: 8px"
+                          ></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <!-- Password input -->
+                      <div class="form-outline mb-4">
+                        <input
+                          type="password"
+                          id="registerPassword"
+                          class="form-control"
+                        />
+                        <label
+                          class="form-label"
+                          for="registerPassword"
+                          style="margin-left: 0px"
+                          >Password</label
+                        >
+                        <div class="form-notch">
+                          <div
+                            class="form-notch-leading"
+                            style="width: 9px"
+                          ></div>
+                          <div
+                            class="form-notch-middle"
+                            style="width: 8px"
+                          ></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <!-- Repeat Password input -->
+                      <div class="form-outline mb-4">
+                        <input
+                          type="password"
+                          id="registerRepeatPassword"
+                          class="form-control"
+                        />
+                        <label
+                          class="form-label"
+                          for="registerRepeatPassword"
+                          style="margin-left: 0px"
+                          >Repeat password</label
+                        >
+                        <div class="form-notch">
+                          <div
+                            class="form-notch-leading"
+                            style="width: 9px"
+                          ></div>
+                          <div
+                            class="form-notch-middle"
+                            style="width: 8px"
+                          ></div>
+                          <div class="form-notch-trailing"></div>
+                        </div>
+                      </div>
+
+                      <!-- Checkbox -->
+                      <div
+                        class="form-check d-flex justify-content-center mb-4"
+                      >
+                        <input
+                          class="form-check-input me-2"
+                          type="checkbox"
+                          value=""
+                          id="registerCheck"
+                          checked=""
+                          aria-describedby="registerCheckHelpText"
+                        />
+                        <label class="form-check-label" for="registerCheck">
+                          I have read and agree to the terms
+                        </label>
+                      </div>
+
+                      <!-- Submit button -->
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-block mb-1"
+                      >
+                        Sign in
+                      </button>
+                    </form>
+                  </div>
+                </div>
+                <!-- Pills content -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Animated navbar -->
+
+        <!-- Background image -->
+        <div
+          id="intro"
+          class="bg-image"
+          style="background-image: url('./img/T.Love.jpg'); height: 100vh"
+        >
+          <div
+            class="mask text-white"
+            style="background-color: rgba(0, 0, 0, 0.8)"
+          >
+            <div
+              class="container d-flex align-items-center justify-content-center text-center h-100 w-100 opensans"
+            >
+              <div>
+                <h1 class="mb-5 display-4">Koncert T.Love</h1>
+                <p class="h6">Zapisz się na najbliższy koncert już teraz!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+      <!--Main Navigation-->
+      <main>
+        <div class="container-fluid w-100 h-100 p-0 m-0 text-white-50">
+          <!-- Jumbotron -->
+          <div class="p-5 text-center bg-lightdark">
+            <h1 class="mb-3">Zainteresowany?</h1>
+            <h4 class="mb-3">Kliknij tutaj!</h4>
+            <a
+              href="#bilety"
+              role="button"
+              data-mdb-smooth-scroll="smooth-scroll"
+              class="text-white"
+              ><i class="fas fa-angles-down"></i
+            ></a>
+          </div>
+          <!-- Jumbotron -->
+          <!-- Info Header -->
+          <section class="py-5 my-5 text-black">
+            <div class="text-end">
+              <!-- Toggler - sidenav -->
+              <button
+                id="toggler"
+                data-mdb-toggle="sidenav"
+                data-mdb-target="#sidenav-1"
+                class="btn btn-success me-5 mb-5"
+                aria-controls="#sidenav-1"
+                aria-haspopup="true"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <!-- Toggler -->
+            </div>
+            <div
+              class="row justify-content-center align-items-center px-0 m-0 gap-5"
+              id="info"
+            >
+              <div
+                expanded="false"
+                data-mdb-toggle="animation"
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="slide-in-left"
+                class="col-sm-4 text-center py-4 bg-greengray rounded-2 shadow-6"
+              >
+                <p class="h2" id="info">Kim są T.Love?</p>
+              </div>
+              <div
+                data-mdb-toggle="animation"
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="slide-in-right"
+                class="col-sm-8 col-md-5 bg-greengray rounded-2 shadow-6 py-3"
+              >
+                <p>
+                  T.Love to założony w Częstochowie w 1982 roku polski zespół
+                  muzyczny. Przez lata jego twórczość skupia się głównie na
+                  muzyce w rockowej, rocku alternatywnym i punk rocku. W swojej
+                  twórczości korzystali również ze stylistyki reggae, pop rocka,
+                  glam rocka. Obecnie w skład zespołu wchodzą: Muniek Staszczyk
+                  (śpiew i gitara basowa), Jan Benedek (gitara), Jacek "Perkoz"
+                  Perkowski (gitara), Paweł Nazimek (gitara basowa), Sidney
+                  Polak (perkusja). Przez lata działalności zespół zdobył
+                  sympatię, uznanie i grono wiernych fanów. Niemal każda z ich
+                  płyt uzyskała status złotej płyty, zaś album "Love, Love, Love
+                  - The Very Best T. Love" pokrył się platyną. W 2017 roku
+                  zespół zawiesił działalność, jednak w 2022 został ponownie
+                  reaktywowany z okazji 40-lecia jego istnienia.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Divider -->
+          <section class="py-5 bg-mint text-center">
+            <p class="h3">Pora się cofnąć w przeszłość...</p>
+          </section>
+          <!-- History -->
+          <section class="py-5 bg-white">
+            <div class="row justify-content-center align-items-center p-0 m-0">
+              <div class="col-md-5 text-black bg-white">
+                <p
+                  data-mdb-toggle="animation"
+                  data-mdb-animation-start="onScroll"
+                  data-mdb-animation="zoom-in"
+                  class="shadow-5 p-2 rounded-3"
+                >
+                  T.Love to obecnie jeden z najpopularniejszych polskich
+                  zespołów. Ich historia zaczyna się jednak w 1982 roku, gdy
+                  czterech licealistów z Częstochowy postanawia założyć własny
+                  zespół o nazwie Teenage Love Alternative. Swoje pierwsze
+                  występy przed publicznością grupa odbywała w szkole, a także
+                  lokalnym domu kultury Stradom w rodzinnej Częstochowie. Na
+                  dużej scenie zadebiutowali w 1983 roku na festiwalu w
+                  Jarocinie. Rok później, w 1984 roku wydali swoją pierwszą
+                  kasetę "Nasz Bubelon". Ich popularność rosła, znaleźli się w
+                  gronie topowych zespołów undergrundowych, takich jak Izrael,
+                  Dezerter czy Kult. Debiut na komercyjnej liście radiowej
+                  spowodował, że zespół pozbył się z nazwy słowa "alternative".
+                  Popularność i dobra passa przyniosła też zagrożenia - zespół
+                  zaczął mniej tworzyć, a w grę weszły używki, co doprowadziło
+                  do jego rozpadu. Muniek Staszczyk wyemigrował do Londynu,
+                  jednak wrócił po 8 miesiącach z nowym spojrzeniem na
+                  rzeczywistość i napisanymi tekstami piosenek, np. "Warszawa".
+                  Wtedy wokalista poznał też Jana Benedka, z którym postanawia
+                  wznowić działalność T. Love. W 1991 roku ukazała się płyta
+                  "Pocisk miłości", która stała się absolutnym hitem.
+                </p>
+              </div>
+              <div class="col-md-5 text-black text-center">
+                <p class="h2">Ale...</p>
+              </div>
+              <div class="col-md-5 text-black text-center">
+                <p class="h2">...od czego się zaczęło?</p>
+              </div>
+              <div class="col-md-5 text-black bg-white">
+                <p
+                  data-mdb-toggle="animation"
+                  data-mdb-animation-start="onScroll"
+                  data-mdb-animation="zoom-in"
+                  class="shadow-5 p-2 rounded-3"
+                >
+                  W 1992 roku wyszedł kolejny album - "King", który przez wielu
+                  krytyków uważany jest za najwybitniejszy ze wszystkich. Zespół
+                  odnosił liczne sukcesy, zaczął koncertować po całej Europie
+                  oraz Stanach Zjednoczonych. Niemal każda płyta przynosiła nowe
+                  hity, które nuciły miliony Polaków. Albumy różniły się co do
+                  klimatu, ale podobało się to fanom i dostarczało nowych.
+                  Dzięki temu T.Love się nie nudziło, za to zawsze zaskakiwało.
+                  2008 roku wydano składankę "Love, love, love - the very
+                  besT.Love", podsumowujący 26 lat istnienia grupy. Płyta
+                  zawierała znane i lubiane hity zespołu oraz 2 nowe utwory.
+                  Szybko pokryła się platyną. Do najpopularniejszych utworów
+                  zespołu należą takie przeboje jak: "King", "Stokrotka",
+                  "Chłopaki nie płaczą", "Jest super", "Warszawa", czy "Ajrisz".
+                  W 2016 roku powstał kolejny album, zatytułowany po prostu
+                  "T.Love". W 2017 roku zespół zawiesił działalność. 2022 rok to
+                  40 rocznica istnienia zespołu, w związku z którą Muniek
+                  Staszczyk ogłosił jego reaktywację. Z tej okazji odbywa się
+                  też trasa koncertowa, promująca najnowszy singiel "Pochodnia"
+                  oraz album "Hau! Hau!".
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- albums etc... -->
+          <section class="py-5 bg-mint text-center">
+            <p class="h3">Inspiracje i Albumy</p>
+          </section>
+          <section class="py-5 bg-white">
+            <div class="row justify-content-center align-items-center p-0 m-0">
+              <div class="col-md-3 text-black bg-white text-center">
+                <h4 class="h4 d-md-block d-none">Inspiracje</h4>
+              </div>
+              <div class="col-md-3 text-black bg-white">
+                <p
+                  data-mdb-toggle="animation"
+                  data-mdb-animation-start="onScroll"
+                  data-mdb-animation="zoom-in"
+                  class="p-2 shadow-5 rounded-3 bg-greengray"
+                >
+                  Powstały w latach 80 XX wieku zespół inspirował się na
+                  początku modnym wtedy punk rockiem. Ich inspiracją w tamtym
+                  czasie były zespoły takie jak The Clash, Buzzcocks, czy The
+                  Undertones. Na polskiej scenie imponowali im między innymi
+                  Kryzys i Deadlock. Inspiracji było jednak dużo więcej - muzycy
+                  słuchali The Beatles, The Rolling Stones, a nawet zespołu
+                  ABBA. Mieszanie różnych stylów stworzyły ciekawy i imponujący
+                  dorobek. Zespół dorastał i zmieniał się na przestrzeni lat.
+                  Zmieniali się muzycy, zmieniała się rzeczywistość, jednak T.
+                  Love zawsze starał się zaskakiwać i poruszać ważne oraz
+                  aktualne tematy. W ich muzyce nie brakuje mocnych brzmień,
+                  melodyjnych piosenek, ballad, czy bardziej tanecznych
+                  kawałków. Teksty poruszają ważne kwestie społeczne,
+                  historyczne, a także uczuciowe. Z tego powodu są tak bliskie
+                  każdemu z nas.
+                </p>
+              </div>
+              <div
+                class="col-md-3 text-black d-flex justify-content-center align-items-center"
+              >
+                <div>
+                  <ul
+                    data-mdb-toggle="animation"
+                    data-mdb-animation-start="onScroll"
+                    data-mdb-animation="zoom-in"
+                    class="list-unstyled p-2 shadow-5 rounded-3 bg-greengray"
+                  >
+                    <li class="mb-1">"Nasz Bubelon" (1984)</li>
+                    <li class="mb-1">"Chamy idą" (1985)</li>
+                    <li class="mb-1">"Wychowanie" (1989)</li>
+                    <li class="mb-1">"Pocisk miłości" (1991)</li>
+                    <li class="mb-1">"Dzieci rewolucji" (1992)</li>
+                    <li class="mb-1">"King" (1992)</li>
+                    <li class="mb-1">"I love you / live" (1994)</li>
+                    <li class="mb-1">"Prymityw" (1994)</li>
+                    <li class="mb-1">"Częstochowa" (1995)</li>
+                    <li class="mb-1">"Al Capone" (1996)</li>
+                    <li class="mb-1">"Chłopaki nie płaczą" (1997)</li>
+                    <li class="mb-1">"Best.love" (1998)</li>
+                    <li class="mb-1">"Antyidol" (1999)</li>
+                    <li class="mb-1">"Model 01" (2001)</li>
+                    <li class="mb-1">"T. Live" (2003)</li>
+                    <li class="mb-1">"I Hate Rock'n'Roll" (2006)</li>
+                    <li class="mb-1">
+                      "Love, Love, Love - The Very Best T. Love" (2008)
+                    </li>
+                    <li class="mb-1">"TLovestory" (2011)</li>
+                    <li class="mb-1">"Hau! Hau" (2022)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 text-black bg-white text-center">
+                <h4 class="h4 d-md-block d-none">Albumy</h4>
+              </div>
+            </div>
+          </section>
+          <section class="py-5 bg-mint text-center">
+            <p class="h3" id="bilety">Bilety</p>
+          </section>
+          <section class="py-5 bg-white">
+            <div class="text-center text-black">
+              <p class="h4">Trzy najbliższe koncerty:</p>
+            </div>
+            <div
+              class="row justify-content-center align-items-center p-0 m-0 py-5 gap-5"
+            >
+              <div class="col-sm-12 col-md-3">
+                <div
+                  data-mdb-toggle="animation"
+                  data-mdb-animation-start="onScroll"
+                  data-mdb-animation="fade-in"
+                  class="card text-black"
+                >
+                  <div
+                    class="bg-image hover-overlay ripple"
+                    data-mdb-ripple-color="light"
+                  >
+                    <img src="./img/hauhau.jpg" class="img-fluid" />
+                    <a href="#!">
+                      <div
+                        class="mask"
+                        style="background-color: rgba(251, 251, 251, 0.15)"
+                        data-mdb-toggle="modal"
+                        data-mdb-target="#exampleModal"
+                      ></div>
+                    </a>
+                  </div>
+
+                  <div class="card-body text-end">
+                    <h5 class="card-title text-center">
+                      T.LOVE | trasa koncertowa HAU! HAU!
+                    </h5>
+                    <p class="card-text text-center">
+                      Ostrów Wielkopolski(Wielkopolskie) - Arena Ostrów
+                    </p>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-success"
+                      data-mdb-ripple-color="dark"
+                      data-mdb-toggle="modal"
+                      data-mdb-target="#exampleModal"
+                    >
+                      <i class="fas fa-cart-shopping"></i> Zakup
+                    </button>
+                  </div>
+                  <div class="card-footer text-black-50">
+                    Odbędzie się za miesiąc...
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <div
+                  data-mdb-toggle="animation"
+                  data-mdb-animation-start="onScroll"
+                  data-mdb-animation="fade-in"
+                  class="card text-black"
+                >
+                  <div
+                    class="bg-image hover-overlay ripple"
+                    data-mdb-ripple-color="light"
+                  >
+                    <img src="./img/przeclaw.jpg" class="img-fluid" />
+                    <a href="#!">
+                      <div
+                        data-mdb-toggle="modal"
+                        data-mdb-target="#exampleModal"
+                        class="mask"
+                        style="background-color: rgba(251, 251, 251, 0.15)"
+                      ></div>
+                    </a>
+                  </div>
+
+                  <div class="card-body text-end">
+                    <h5 class="card-title text-center">
+                      Przecław Festiwal '23 - T.Love
+                    </h5>
+                    <p class="card-text text-center">
+                      Przecław(Zachodniopomorskie) - Gminny Ośrodek Kultury,
+                      Sportu i Rekreacji w Przecławiu
+                    </p>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-success"
+                      data-mdb-ripple-color="dark"
+                      data-mdb-toggle="modal"
+                      data-mdb-target="#exampleModal"
+                    >
+                      <i class="fas fa-cart-shopping"></i> Zakup
+                    </button>
+                  </div>
+                  <div class="card-footer text-black-50">
+                    Odbędzie się za 2 dni...
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-3">
+                <div
+                  data-mdb-toggle="animation"
+                  data-mdb-animation-start="onScroll"
+                  data-mdb-animation="fade-in"
+                  class="card text-black"
+                >
+                  <div
+                    class="bg-image hover-overlay ripple"
+                    data-mdb-ripple-color="light"
+                  >
+                    <img src="./img/jarocin.jpg" class="img-fluid" />
+                    <a href="#!">
+                      <div
+                        class="mask"
+                        style="background-color: rgba(251, 251, 251, 0.15)"
+                        data-mdb-toggle="modal"
+                        data-mdb-target="#exampleModal"
+                      ></div>
+                    </a>
+                  </div>
+
+                  <div class="card-body text-end">
+                    <h5 class="card-title text-center">
+                      JAROCIN FESTIWAL 2023
+                    </h5>
+                    <p class="card-text text-center">
+                      Jarocin(Wielkopolskie) - Miasteczko Namiotowe Jarocin
+                    </p>
+
+                    <button
+                      type="button"
+                      class="btn btn-outline-success"
+                      data-mdb-ripple-color="dark"
+                      data-mdb-toggle="modal"
+                      data-mdb-target="#exampleModal"
+                    >
+                      <i class="fas fa-cart-shopping"></i> Zakup
+                    </button>
+                  </div>
+                  <div class="card-footer text-black-50">
+                    Odbędzie się za 3 miesiące...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="py-5 bg-mint text-center">
+            <p class="h3">Najbliższy koncert</p>
+          </section>
+          <section class="text-center py-5">
+            <div class="container">
+              <div class="row gx-0 align-items-center">
+                <!-- Firt column -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                  <div
+                    style="
+                      background: hsla(0, 0%, 100%, 0.55);
+                      backdrop-filter: blur(30px);
+                      z-index: 1;
+                    "
+                    class="card rounded-7 me-lg-n5"
+                  >
+                    <div class="p-lg-5 shadow-5 text-black">
+                      <p class="h4">Przecław Festiwal '23</p>
+                      <p>
+                        Przecław Festiwal to plenerowe wydarzenie na styku
+                        wiosny i lata, podczas którego celebrujemy dobrą muzykę
+                        i oddajemy się kreatywnej zabawie. Czerwcowa impreza
+                        jest kulminacją rocznego programu artystycznego Gminnego
+                        Ośrodka Kultury Sportu i Rekreacji w Przecławiu. W
+                        trakcie dwóch festiwalowych dni spotkamy się z
+                        najlepszymi wykonawcami polskiej sceny muzycznej i
+                        stworzymy przyjazną przestrzeń do familijnego relaksu.
+                        Wystąpią na nim m.in T.Love.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Firt column -->
+
+                <!-- Second column -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                  <div class="ratio ratio-1x1">
+                    <iframe
+                      class="shadow-3-strong rounded-7"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4760.076038176404!2d14.470655551609212!3d53.37836921960674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa05f94e9e9633%3A0x68c652698e6c5da2!2zUHJ6ZWPFgmF3!5e0!3m2!1spl!2spl!4v1680729701282!5m2!1spl!2spl"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+                <!-- Second column -->
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="text-center" style="background-color: #1d401d">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #3b5998"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #55acee"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Google -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #dd4b39"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #ac2bac"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #0082ca"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn btn-primary btn-floating m-1"
+              style="background-color: #333333"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2023 Copyright:
+          <a class="text-dark" href="#">Concerts</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End your project here-->
+  </body>
+
+  <!-- MDB ESSENTIAL -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- MDB PLUGINS -->
+  <script type="text/javascript" src="plugins/js/all.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+    const nav = document.querySelector("#navbar");
+    const div = document.querySelector("#nav-box");
+    const toggler = document.querySelector("#toggler");
+
+    const options = {
+      rootMargin: "-50px 0px 0px 0px", // adjust as needed
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // if the navbar is intersecting the viewport, remove the 'fade' class to make it visible
+          navbar.classList.remove("fade-animation");
+        } else {
+          // if the navbar is not intersecting the viewport, add the 'fade' class to make it fade out
+          navbar.classList.add("fade-animation");
+        }
+      });
+    }, options);
+
+    observer.observe(div);
+  </script>
+</html>
